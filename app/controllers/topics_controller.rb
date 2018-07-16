@@ -5,9 +5,20 @@ class TopicsController < ApplicationController
         json: { error: 'Authentication required' }
       return
     end
-    topics = YAML.load_file(Rails.root.join('config', 'topics.yml'))
+
     render json: {
-      topics: topics
+      topics: policy_scope(Topic).all.map do |t|
+        {
+          title: t.title,
+          articles: t.articles.map do |a|
+            {
+              title: a.title,
+              url: a.url,
+              meta: a.meta,
+            }
+          end,
+        }
+      end
     }
   end
 end

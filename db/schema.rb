@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_10_181058) do
+ActiveRecord::Schema.define(version: 2018_07_16_143624) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 2018_07_10_181058) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["site_id"], name: "index_additional_contacts_on_site_id"
+  end
+
+  create_table "articles", force: :cascade do |t|
+    t.string "title", limit: 255, null: false
+    t.string "url", limit: 512, null: false
+    t.json "meta", default: "{}", null: false
+    t.bigint "topic_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["topic_id"], name: "index_articles_on_topic_id"
   end
 
   create_table "asset_record_field_definitions", force: :cascade do |t|
@@ -401,6 +411,12 @@ ActiveRecord::Schema.define(version: 2018_07_10_181058) do
     t.index ["issue_id"], name: "index_tiers_on_issue_id"
   end
 
+  create_table "topics", force: :cascade do |t|
+    t.string "title", limit: 255, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -417,6 +433,7 @@ ActiveRecord::Schema.define(version: 2018_07_10_181058) do
   end
 
   add_foreign_key "additional_contacts", "sites"
+  add_foreign_key "articles", "topics"
   add_foreign_key "asset_record_field_definitions_component_types", "asset_record_field_definitions"
   add_foreign_key "asset_record_field_definitions_component_types", "component_types"
   add_foreign_key "asset_record_fields", "asset_record_field_definitions"
