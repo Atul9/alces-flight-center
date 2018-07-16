@@ -1,0 +1,150 @@
+- title: Using your cluster
+  articles:
+    - title: Basic cluster operation
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/basics/basic_cluster_operation.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Working with data and files
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/databasics/data_basics.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Home Directory Synchronization
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/alces-sync/alces-sync.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Graphical desktop access to your login node
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/graphicaldesktop/graphicaldesktop.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Cluster VPN
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/vpn/vpn.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+- title: Software applications
+  articles:
+
+    - title: Software applications
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/apps/apps.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Parallel (MPI) applications
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/mpiapps/mpiapps.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Using Gridware with Docker
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/apps/docker.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Using Gridware with Singularity
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/apps/singularity.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Available Software Packages
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/apps/gridware.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+- title: Cluster job schedulers
+  articles:
+    - title: Introduction to cluster job schedulers
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/jobschedulers/jobschedulers.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Slurm scheduler
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/slurm/slurm.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Open Grid Scheduler (SGE)
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/sge/sge.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: TORQUE Scheduler
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/torque/torque.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: PBS Pro Scheduler
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/pbspro/pbspro.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+
+- title: Example workflows
+  articles:
+
+    - title: "Working with Gridware Applications: R"
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/getting-started/environment-usage/gridware-features/gridware-R.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: "Working with Gridware Applications: Perl"
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/getting-started/environment-usage/gridware-features/gridware-perl.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: "Working with Gridware Applications: Python"
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/getting-started/environment-usage/gridware-features/gridware-python.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Using OpenFoam with Alces Flight Compute
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/getting-started/environment-usage/using-openfoam-with-alces-flight-compute.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+    - title: Using NAMD with Alces Flight Compute
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/getting-started/environment-usage/namd_on_flight.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
