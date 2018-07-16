@@ -1,11 +1,6 @@
 class Article < ApplicationRecord
-  class << self
-    def globally_available?
-      true
-    end
-  end
-
   belongs_to :topic
+  delegate :site, to: :topic
 
   validates :title,
     presence: true,
@@ -14,4 +9,10 @@ class Article < ApplicationRecord
     }
   validates :url, presence: true
   validates :meta, presence: true
+
+  private
+
+  def permissions_check_unneeded?
+    topic.global? || super
+  end
 end

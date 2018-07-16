@@ -11,6 +11,7 @@ class AddArticles < ActiveRecord::Migration[5.2]
   end
 
   def down
-    raise ActiveRecord::IrreversibleMigration
+    Article.destroy_all
+    # raise ActiveRecord::IrreversibleMigration
   end
 end

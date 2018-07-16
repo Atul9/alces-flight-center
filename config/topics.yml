@@ -148,3 +148,25 @@
         section: 5
         author: Alces Software
         date: 2018-06-18
+
+- title: Site topic (demo site)
+  site: Demo Site
+  articles: 
+    - title: Using NAMD with Alces Flight Compute
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/getting-started/environment-usage/namd_on_flight.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
+
+- title: Site topic (Liverpool)
+  site: The University Of Liverpool
+  articles: 
+    - title: Using OpenFoam with Alces Flight Compute
+      url: https://raw.githubusercontent.com/alces-software/flight-appliance-docs/2017.2r1/docs/source/getting-started/environment-usage/using-openfoam-with-alces-flight-compute.rst
+      meta:
+        section: 5
+        author: Alces Software
+        date: 2018-06-18
+
