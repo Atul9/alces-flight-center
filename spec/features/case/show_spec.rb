@@ -118,7 +118,7 @@ RSpec.describe 'Case page', type: :feature do
           'Loggy McLogface'
       )
       expect(event_cards[0].find('.card-body').text).to eq(
-        'Change request has been proposed and is awaiting customer authorisation. View change request'
+        'Change request has been proposed and is awaiting your authorisation. View change request'
       )
     end
 

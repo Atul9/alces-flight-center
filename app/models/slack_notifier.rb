@@ -104,7 +104,7 @@ class SlackNotifier
     end
 
     def change_request_notification(kase, text, user)
-      text = "The change request for this case #{text}"
+      text = "A change request for this case #{text}"
       change_request_note = {
         fallback: text,
         color: '#f44192',

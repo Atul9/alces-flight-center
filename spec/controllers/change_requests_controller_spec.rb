@@ -14,7 +14,7 @@ RSpec.describe ChangeRequestsController, type: :controller do
   let(:kase) { build(:open_case, tier_level: 4, cluster: cluster)}
 
   EXPECTED_BEHAVIOURS = [ # initial_state, action, user, message, next_state
-    [:draft, :propose, :admin, 'has been proposed and is awaiting customer authorisation.', :awaiting_authorisation],
+    [:draft, :propose, :admin, 'has been proposed and is awaiting your authorisation.', :awaiting_authorisation],
     [:awaiting_authorisation, :authorise, :contact, 'has been authorised.', :in_progress],
     [:awaiting_authorisation, :decline, :contact, 'has been declined.', :declined],
     [:in_progress, :handover, :admin, 'is ready for handover.', :in_handover],

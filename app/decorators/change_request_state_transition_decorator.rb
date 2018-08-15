@@ -12,7 +12,7 @@ class ChangeRequestStateTransitionDecorator < ApplicationDecorator
   def text_for_event
     case object.event
     when 'propose'
-      'has been proposed and is awaiting customer authorisation.'
+      'has been proposed and is awaiting your authorisation.'
     when 'decline'
       'has been declined.'
     when 'authorise'
